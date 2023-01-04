@@ -13,7 +13,7 @@ public class HelloSpringApp {
 
         //chamar os metodos no objeto(bean)
         System.out.println(theCoach.getDailyWorkout());
-
+        System.out.println(theCoach.getDailyFortune());
         //fechar o contexto aberto
         context.close();
     }
