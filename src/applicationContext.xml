@@ -19,8 +19,16 @@
 
     <bean id="myCoach"
     class="com.springdemo.TrackCoach">
+        <!-- constructor -->
         <constructor-arg ref="myFortune"/>
     </bean>
+
+    <bean id="myBasketballCoach"
+    class="com.springdemo.BasketballCoach">
+        <!-- setter -->
+    <property name="fortuneService" ref="myFortune" />
+    </bean>
+
 </beans>
 
 

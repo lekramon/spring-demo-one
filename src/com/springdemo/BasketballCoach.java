@@ -1,14 +1,17 @@
 package com.springdemo;
 
 public class BasketballCoach implements Coach {
-
-    //definindo o private field para dependencia
     private FortuneService fortuneService;
 
-    //definindo o constructor para a injecao da dependencia
-    public BasketballCoach(FortuneService theFortuneService) {
-        this.fortuneService = theFortuneService;
+    //defininindo um constructor vazio
+    public BasketballCoach() {
+        System.out.println("BasketballCoach: Dentro do constructor vazio");
     }
+    public void setFortuneService(FortuneService fortuneService) {
+        System.out.println("BasketballCoach: Dentro do metodo setter - setFortuneService");
+        this.fortuneService = fortuneService;
+    }
+
     @Override
     public String getDailyWorkout() {
         return "Try to shoot mid-range";
