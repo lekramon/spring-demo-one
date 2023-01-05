@@ -12,6 +12,9 @@ public class SetterDemoApp {
         //chamar os metodos no objeto(bean)
         System.out.println(theCoach.getDailyWorkout());
         System.out.println(theCoach.getDailyFortune());
+        //valores passados no applicationcontext (literal values)
+        System.out.println(theCoach.getEmailAdress());
+        System.out.println(theCoach.getTeam());
         //fechar o contexto aberto
         context.close();
     }

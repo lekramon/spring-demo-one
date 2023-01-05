@@ -6,13 +6,13 @@ public class TrackCoach implements Coach {
 
     //correcao do MyApp (ainda nao explicado)
     public TrackCoach() {
-
     }
 
     //definindo o constructor para a injecao da dependencia
     public TrackCoach(FortuneService theFortuneService) {
         this.fortuneService = theFortuneService;
     }
+
     @Override
     public String getDailyWorkout() {
         return "Run a hard 5k";
